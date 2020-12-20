@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>Insert Movie Personnel</title>
+</head>
+	<body>
+		<form action="/moviep" accept-charset="utf-8" name="movie_personnel_insert" method="get">
+			<fieldset style ="width: 150">
+				<legend> 영화 관계자 정보 입력 </legend>
+				<br>
+				SSN: <input type="text" name="ssn" required/><br><br>
+				Name: <input type="text" name="name" required/><br><br>
+				Birth Date: <input type="text" name="bdate"
+							pattern="\d{4}\-\d{2}\-\d{2}"
+							title="YYYY-MM-DD 형식으로 입력해주세요." /><br><br>
+							
+				<a href="http://localhost:8888/movie_insert.html"> 영화 정보 입력하기 </a>
+				<br><br>			
+				<input type="submit" value="submit"/>
+				<input type="reset" value="reset"/><br><br>
+				
+			</fieldset>
+		</form>
+	</body>
+</html>

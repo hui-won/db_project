@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>Insert Movie Information</title>
+</head>
+	<body>
+		<form action="/moviei" accept-charset="utf-8" name="movie_insert" method="get">
+			<fieldset style ="width: 150">
+				<legend> 영화 정보 입력 </legend>
+				<br>
+				영화 ID: <input type="text" name="movie_id" required/><br><br>
+				제목: <input type="text" name="title" required/><br><br>
+				개봉일: <input type="text" name="odate"
+							pattern="\d{4}\-\d{2}\-\d{2}"
+							title="YYYY-MM-DD 형식으로 입력해주세요."/><br><br>
+				<br>		
+				감독 SSN:<input type="text" name="dssn" required/><br><br><br>	
+				제작자 SSN:<input type="text" name="pssn" required/><br>	
+				<a href="http://localhost:8888/producer_insert.html">제작자 추가 입력하기 CLICK!</a>
+			
+				<br><br>	
+				주연1 SSN: <input type="text" name="lssn1" required/><br>	
+				주연2 SSN: <input type="text" name="lssn2"/><br>	
+				*주연은 두명까지 입력 가능합니다.*<br><br>
+				<a href="http://localhost:8888/actor_insert.html">조연 배우 입력하기 CLICK!</a>
+				
+				
+				<br><br>
+				<input type="submit" value="submit"/>
+				<input type="reset" value="reset"/><br><br>
+					
+			</fieldset>
+		</form>
+	</body>
+</html>

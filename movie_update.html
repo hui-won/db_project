@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>Update Movie Information</title>
+</head>
+	<body>
+		<form action="/movieu" accept-charset="utf-8" name="movie_insert" method="get">
+			<fieldset style ="width: 150">
+				<legend> 수정하고자 하는 영화의 정보를 입력하세요 </legend>
+				<br>
+				영화 ID: <input type="text" name="movie_id" required/><br><br>
+				제목: <input type="text" name="title" required/><br><br>
+				개봉일: <input type="text" name="odate"
+							pattern="\d{4}\-\d{2}\-\d{2}"
+							title="YYYY-MM-DD 형식으로 입력해주세요."required/><br><br>		
+				감독 SSN:<input type="text" name="dssn" required/><br><br><br>	
+				
+				<input type="submit" value="submit"/>
+				<input type="reset" value="reset"/><br><br>
+					
+			</fieldset>
+		</form>
+	</body>
+</html>
